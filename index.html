@@ -3,20 +3,166 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Primeiro Site na Vercel</title>
+  <title>Portfólio Profissional | Carlos Oliveira</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f4f4f9;
-      color: #333;
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --primary: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
     }
-    h1 { color: #0070f3; }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: var(--primary);
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-top: 8px;
+    }
+
+    section {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--primary);
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      background: #334155;
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project-card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+    }
+
+    .project-card h3 {
+      color: var(--text);
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .project-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    a.btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--primary);
+      color: #0f172a;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: opacity 0.2s;
+    }
+
+    a.btn:hover {
+      opacity: 0.9;
+    }
   </style>
 </head>
 <body>
-  <h1>Meu site está online! 🚀</h1>
-  <p>Publicado com sucesso via GitHub e Vercel.</p>
+  <div class="container">
+    <header>
+      <h1>Carlos Oliveira</h1>
+      <p>Suporte Técnico | Bancos de Dados | Tecnologia</p>
+    </header>
+
+    <section>
+      <h2>Sobre Mim</h2>
+      <p>Profissional com experiência em suporte ao cliente e resolução de problemas técnicos, focado em banco de dados MySQL, análise de dados e ferramentas web.</p>
+    </section>
+
+    <section>
+      <h2>Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">HTML5 / CSS3</span>
+        <span class="skill-tag">Git & GitHub</span>
+        <span class="skill-tag">Suporte Técnico</span>
+        <span class="skill-tag">Power BI</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projetos em Destaque</h2>
+      <div class="project-card">
+        <h3>Agente Administrativo Copilot</h3>
+        <p>Automação e fluxos de atendimento com foco em produtividade administrativa.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portal de Consultas SQL</h3>
+        <p>Estruturação e consultas relacionais para gestão e suporte de dados.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <p>Conecte-se comigo ou veja mais projetos:</p>
+      <div class="links">
+        <a class="btn" href="https://github.com/carlosaoc" target="_blank">GitHub</a>
+        <a class="btn" href="https://linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
