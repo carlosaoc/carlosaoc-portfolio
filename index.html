@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Carlos Oliveira — suporte técnico, bancos de dados e projetos com MySQL e Power BI.">
   <title>Portfólio Profissional | Carlos Oliveira</title>
   <style>
     :root {
@@ -10,19 +11,19 @@
       --card-bg: #1e293b;
       --primary: #38bdf8;
       --text: #f8fafc; 
-      --text-muted: #94a3b8;
+      --text-muted: #b6c2d4;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     body {
       background-color: var(--bg);
       color: var(--text);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
       padding: 40px 20px;
     }
@@ -68,6 +69,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      list-style: none;
     }
 
     .skill-tag {
@@ -115,8 +117,11 @@
       transition: opacity 0.2s;
     }
 
-    a.btn:hover {
+    a.btn:hover,
+    a.btn:focus-visible {
       opacity: 0.9;
+      outline: 2px solid var(--text);
+      outline-offset: 2px;
     }
   </style>
 </head>
@@ -124,23 +129,25 @@
   <div class="container">
     <header>
       <h1>Carlos Oliveira</h1>
-      <p>Suporte Técnico | Bancos de Dados | Tecnologia</p>
+      <p>Suporte Técnico | Análise de Dados | Python</p>
     </header>
 
     <section>
       <h2>Sobre Mim</h2>
-      <p>Profissional com experiência em suporte ao cliente e resolução de problemas técnicos, focado em banco de dados MySQL, análise de dados e ferramentas web.</p>
+      <p>Profissional com experiência em suporte ao cliente e resolução de problemas técnicos, em transição de carreira para a área de Dados. Venho me aprofundando em Python, SQL e ferramentas de análise, unindo minha vivência técnica anterior a uma base sólida em programação e dados.</p>
     </section>
 
     <section>
       <h2>Habilidades Técnicas</h2>
-      <div class="skills-grid">
-        <span class="skill-tag">MySQL & Python</span>
-        <span class="skill-tag">HTML5 / CSS3</span>
-        <span class="skill-tag">Git & GitHub</span>
-        <span class="skill-tag">Suporte Técnico</span>
-        <span class="skill-tag">Power BI</span>
-      </div>
+      <ul class="skills-grid">
+        <li class="skill-tag">Python</li>
+        <li class="skill-tag">SQL / MySQL</li>
+        <li class="skill-tag">Pandas</li>
+        <li class="skill-tag">Power BI</li>
+        <li class="skill-tag">Git &amp; GitHub</li>
+        <li class="skill-tag">HTML5 / CSS3</li>
+        <li class="skill-tag">Suporte Técnico</li>
+      </ul>
     </section>
 
     <section>
@@ -156,11 +163,23 @@
     </section>
 
     <section>
+      <h2>Formação &amp; Estudos</h2>
+      <div class="project-card">
+        <h3>Python para Análise de Dados</h3>
+        <p>Estudos em andamento — fundamentos de programação, manipulação de dados com Pandas e lógica aplicada a IA.</p>
+      </div>
+      <div class="project-card">
+        <h3>SQL &amp; Bancos de Dados</h3>
+        <p>Consultas, modelagem relacional e boas práticas aplicadas a projetos de suporte e gestão de dados.</p>
+      </div>
+    </section>
+
+    <section>
       <h2>Contato</h2>
       <p>Conecte-se comigo ou veja mais projetos:</p>
       <div class="links">
-        <a class="btn" href="https://github.com/carlosaoc" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/carlos-oliveira-9017a221a" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
+        <a class="btn" href="https://github.com/carlosaoc" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/carlosaoc" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn</a>
       </div>
     </section>
   </div>
